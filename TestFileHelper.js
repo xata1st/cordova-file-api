@@ -47,3 +47,5 @@ function createDirectory(path) {
 }
 
 createDirectory('asd/fdh');
+
+//test smth else
