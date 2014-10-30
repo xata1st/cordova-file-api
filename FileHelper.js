@@ -446,7 +446,7 @@ Ext.define('App.util.FileHelper', {
 		
 		function pMoveFile(sourceName, parent, newName, success, fail) {
 			pGetFile(sourceName, null, function(fileEntry) {
-				pGetDirectory(parent, {create: true, exclusive: false}, function(directoryEntry) {	
+				pGetDirectory(parent, {create: true, exclusive: false}, function(directoryEntry) {
 					fileEntry.moveTo(directoryEntry, newName, success, fail);
 				});
 			});
